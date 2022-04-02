@@ -3,10 +3,26 @@
     padding: 0;
 }
 
+:root {
+    --primary-color : #edf2fc;
+    --secondary-color : #212121;
+}
+
+.dark-theme {
+    --primary-color : #000106;
+    --secondary-color : #fff;
+}
+
+#icon {
+    width: 25px;
+    padding: 0;
+    cursor: pointer;
+}
+
 .hero-area {
     width: 100%;
     height: 100vh;
-    background: #edf2fc;
+    background: var(--primary-color);
     font-family: sans-serif;
     position: relative;
 }
@@ -16,7 +32,7 @@
 }
 
 .nav-item a {
-    color: #606163 !important;
+    color: var(--secondary-color) !important;
     font-size: 17px;
 }
 
@@ -30,7 +46,10 @@
 
 .info-hero h1 {
     font-size: 65px;
-    color: #212121;
+    color: var(--secondary-color);
+}
+.info-hero p {
+    color: var(--secondary-color);
 }
 
 .info-hero span {
